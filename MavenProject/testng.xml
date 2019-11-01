@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+  <parameter name="address-from" value="улица имени А.Н. Радищева, 39"/>
+  <parameter name="time" value="На ближайшее время"/>
+  <parameter name="price" value="Эконом от 59 Р"/>
+
+  <parameter name="category" value="Гаджеты"/>
+  <parameter name="subcategory" value="Action камеры"/>
+  <parameter name="page-title" value="Action камеры "/>
+  <parameter name="model" value="Sony"/>
+  <parameter name="addition" value="NFC-чип"/>
+  <parameter name="good" value="Sony HDR-AZ1VW"/>
+
+  <parameter name="category2" value="Компьютеры"/>
+  <parameter name="subcategory2" value="Планшеты"/>
+  <parameter name="price" value="30000"/>
+
+  <test name="Regression">
+   <classes>
+    <class name="ValidateTest"></class>
+    <class name="DemoTest"></class>
+   </classes>
+  </test>
+</suite>
